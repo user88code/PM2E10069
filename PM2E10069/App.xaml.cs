@@ -23,7 +23,6 @@ namespace PM2E10069
                     dBProc = new controladores.DBProc(dbfulp);
                 }
 
-
                 return dBProc;
             }
         }
