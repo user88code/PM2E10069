@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM2E10069.vista.PageSitio">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Entry">
+                <Setter Property="PlaceholderColor" Value="Gray" />
+                <Setter Property="MaxLength" Value="100" />
+            </Style>
+
+            <Style TargetType="DatePicker">
+                <Setter Property="BackgroundColor" Value="LightGray" />
+            </Style>
+
+            <Style TargetType="Button">
+                <Setter Property="BackgroundColor" Value="SteelBlue" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="Margin" Value="0,20,0,0" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Image x:Name="foto" WidthRequest="100" HeightRequest="200" />
+
+            <Button x:Name="btnfoto" Text="Capturar Imagen" Clicked="btnfoto_Clicked" />
+
+            <Button x:Name="btngetubicacion" Text="Obtener ubicacion" Clicked="btngetubicacion_Clicked" />
+
+            <Entry x:Name="Latitud" Placeholder="Latitud" MaxLength="100"  />
+
+            <Entry x:Name="Longitud" Placeholder="Longitud" MaxLength="100"  />
+
+            <Entry x:Name="Descripcion" Placeholder="Descripcion" MaxLength="100" />
+
+            <Button x:Name="btnguardar" Text="Guardar" Clicked="btnguardar_Clicked" />
+
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>
